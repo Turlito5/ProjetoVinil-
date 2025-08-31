@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
-  --BgPrincipal: #e9e6e6;
+  --BgPrincipal: #ebebeb;
   --Bgsecundário: #cacaca;
   --Textcolor: black;
   --TextcolorSecondary: #9b9b9b;
   --colorStyle: #8850f0;
+  --colorStyle2: #7754ca;
   --NavBar: rgb(105, 211, 105);
   --NavbarHover: rgb(12, 190, 12);
+}
+
+body {
+  background-color: var(--BgPrincipal);
+  color: var(--Textcolor);
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  transition: ease all 0.7s;
 }
 
 .outfit {
@@ -23,22 +33,45 @@
   padding: 0px;
 }
 .conteudo {
-  padding: 5px;
+  padding: 2px;
   width: 50%;
   height: 50%;
   margin-left: 10%;
-  text-align: center;
+  font-size: 1.2rem;
   font-family: "Outfit", sans-serif;
 }
+.card {
+  margin-top: 10px;
+  width: 100%;
+}
 nav {
-  background-color: var(--NavBar);
+  background: linear-gradient(
+    75deg,
+    rgb(105, 211, 105),
+    rgb(23, 224, 23),
+    rgb(12, 190, 12),
+    rgb(19, 151, 19),
+    rgb(18, 143, 18)
+  );
   margin: 0px;
   padding: 0px;
 }
+
 .Side-Bar {
   height: 100vh;
 }
-
+.Content-Darkmode {
+  background-color: #131313;
+  transition: ease all 0.7s;
+}
+.Side-barDarkmode {
+  background-color: #3d3d3d;
+  transition: ease all 0.7s;
+}
+.WhiteText {
+  color: white !important;
+  transition: ease all 0.7s;
+}
 a {
   text-align: center;
   justify-content: space-around;
@@ -92,7 +125,7 @@ a:hover {
 nav ul.navbar-nav {
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Espaçamento entre os itens */
+  gap: 40px;
   width: 100%;
 }
 
@@ -105,7 +138,292 @@ nav li {
   align-items: center;
 }
 i {
-  margin-right: 5px;
-  transform: scale(1.1);
-  margin-bottom: 8%;
+  transform: scale(3);
+  margin-bottom: 4.5%;
+  margin-right: 15%;
+}
+
+.profile {
+  background-color: var(--colorStyle);
+  border: solid 2px var(--TextcolorSecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  max-width: 20%;
+  height: 70px;
+  border-radius: 30px;
+  transition: box-shadow 0.3s, background 0.5s;
+}
+
+.Darkmode {
+  background-color: var(--colorStyle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.5s, background 0.5s;
+  width: 130%;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+}
+.i {
+  transform: scale(2.9);
+  margin-bottom: 4.5%;
+  margin-right: 15%;
+}
+i {
+  margin-top: 10px;
+}
+.Darkmode:hover {
+  background: var(--Bgsecundário);
+  box-shadow: 0 0 0 4px var(--colorStyle);
+  transition: box-shadow 0.5s, background 0.5s;
+}
+
+.profile:hover {
+  background: var(--NavbarHover);
+  box-shadow: 0 0 0 4px var(--colorStyle);
+}
+
+input[type="checkbox"] {
+  margin-left: 10%;
+  width: 30px;
+  height: 30px;
+  accent-color: var(--colorStyle);
+  display: d-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.7rem;
+  margin-left: 5px;
+  color: var(--Textcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-custom {
+  background-color: var(--colorStyle);
+  color: white;
+  border: none;
+  outline: rgb(0, 0, 0);
+  scale: 1.1;
+  margin: 2px;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  margin: 10px;
+}
+
+.btn-custom:active {
+  background-color: var(--colorStyle2);
+}
+
+.btn-custom:hover {
+  background-color: var(--colorStyle2);
+  color: white;
+  border: none;
+  outline: rgb(0, 0, 0);
+}
+.filter .row > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.filters .row > div,
+.filters > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.filters input[type="checkbox"] {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  accent-color: var(--colorStyle);
+}
+
+.filters label {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.7rem;
+  margin-left: 10px;
+  color: var(--Textcolor);
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"],
+label {
+  margin-bottom: 5%;
+}
+form {
+  width: 50%;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+input[type="text"] {
+  scale: 1.2;
+}
+
+body.darkmode-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: ease all 0.7s;
+}
+
+.navDarkMode {
+  background: linear-gradient(
+    75deg,
+    rgb(62, 131, 62),
+    rgb(12, 128, 12),
+    rgb(5, 109, 7),
+    rgb(9, 71, 9),
+    rgb(10, 77, 10)
+  );
+}
+
+.Text-Darkmode {
+  background-color: purple;
+  transition: ease all 0.7s;
+}
+.CardDarkmode {
+  background-color: #1c1c1c !important;
+  color: white;
+  transition: ease all 0.7s;
+}
+
+body,
+body.darkmode-btn,
+.Content-Darkmode,
+.Side-barDarkmode,
+.CardDarkmode,
+.navDarkMode,
+.Text-Darkmode,
+.WhiteText {
+  transition: background-color 0.7s, color 0.7s, box-shadow 0.7s;
+}
+.BackPage {
+  font-size: 30px;
+  text-align: center;
+  transition: all ease 0.7s;
+  border-radius: 10px;
+  max-width: 200px;
+  background-color: var(--NavBar);
+  color: black;
+}
+.BackPage:hover {
+  font-size: 30px;
+  transition: all ease 0.7s;
+  transform: translateY(-5px);
+  background-color: var(--NavbarHover);
+  border-radius: 10px;
+  transition: all ease 0.7s;
+  max-width: 200px;
+}
+.filters {
+  position: fixed;
+  left: -250px; /* escondida inicialmente */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.filters.open {
+  left: 0; /* aparece */
+}
+
+.filters p,
+.filters label {
+  color: #fff;
+}
+
+.filters div {
+  margin: 10px 0;
+}
+.toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+  margin-top: 1%;
+  margin-left: 2%;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--NavbarHover);
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  transition: all ease 0.7s;
+}
+.toggle-btn:hover {
+  background-color: var(--colorStyle);
+  color: white;
+  transition: all ease 0.7s;
+}
+.btn,
+.card-text {
+  font-size: 20px;
+}
+.card-title {
+  font-size: 2rem;
+}
+
+.box {
+  border-radius: 50px;
+  background-color: var(--Bgsecundário);
+  box-shadow: #3d3d3d 0px 0px 20px;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 600px;
+  padding: 30px;
+
+  margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  #profileIcon h2,
+  #Darkmode h3 {
+    display: none;
+  }
+  #Darkmode {
+    width: 60px;
+    height: 60px;
+  }
+  #Darkmode i {
+    margin: 0;
+  }
+  #profileIcon {
+    width: 65px;
+    height: 65px;
+  }
+  #profileIcon i {
+    margin: 0;
+  }
+  #Search input {
+    justify-content: center;
+    display: flex;
+  }
+  #Search button {
+    display: flex;
+    justify-content: end;
+  }
 }
