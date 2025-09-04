@@ -1,20 +1,130 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+       <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Disco de vinil</title>
+    <link
+      rel="shortcut icon"
+      href="https://images.vexels.com/media/users/3/220867/isolated/preview/bd965821cb0e6f1c74c52dfe6251b3a0-nada-como-o-distintivo-de-vinil-preto.png"
+      type="image/x-icon"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-  </head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="script.js"></script>
   <body>
     <header>
-      <div></div>
+      <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h1 type="button" class="navbar-brand outfit" href="#">
+            Venda de discos
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="nav-link active effect borderEffect outfit"
+                  aria-current="page"
+                  href="index.html"
+                  >inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="nav-link active effect borderEffect outfit"
+                  aria-current="page"
+                  href="#"
+                  >Carrinho</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="nav-link active effect borderEffect outfit"
+                  aria-current="page"
+                  href="#"
+                  >Sobre</a
+                >
+              </li>
+
+              <div class="profile borderEffect" id="profileIcon">
+                <i class="fa-solid fa-user"></i>
+                <h2 class="outfit">Perfil</h2>
+              </div>
+
+              <div>
+                <button
+                  onclick="toggleDarkMode()"
+                  class="Darkmode borderEffect"
+                  id="Darkmode"
+                >
+                  <i class="mx-auto i fa-regular fa-moon"></i>
+                  <h3 class="outfit mx-auto">Modo escuro</h3>
+                </button>
+              </div>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="PROCURAR..."
+              />
+              <button class="btn btn-custom" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <content> </content>
+    <content>
+ <div class="container my-4 ContentPage">
+  <div class="row justify-content-center align-items-center">
+    
+    <!-- Imagem -->
+    <div class="col-12 col-md-6 col-lg-4 text-center mb-3 mb-md-0">
+      <img src="assets/vinil.png" alt="Disco de Vinil" class="product img-fluid">
+      <button onclick="Alerta()" class="btn-primary btn button"> Compre</button>
+    </div>
+
+    <!-- Descrição -->
+    <div class="col-12 col-md-4 col-lg-8 productForm" id="page2">
+      <h1 class="outfit mb-3">Descrição do produto</h1>
+      <p class="description">
+        🎶 <strong>Disco de Vinil Clássico</strong><br>
+        Um item que une nostalgia e qualidade sonora, perfeito para colecionadores e amantes da música. 
+        Com sua capa estilosa e som quente e envolvente, este vinil transforma qualquer audição em uma experiência única.
+      </p>
+      <p>Por apenas 25.99R$</p>
+    </div>
+
+  </div>
+</div>
+
+    
+    
+    </content>
 
     <footer></footer>
 

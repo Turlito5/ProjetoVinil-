@@ -109,27 +109,57 @@
             <p id="Back" class="BackPage" type="button">Voltar</p>
           </center>
           <div>
-            <input type="checkbox" name="Anos80" id="Vinil80" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="Anos80"
+              id="vinil80"
+            />
             <label for="Vinil80"> Vinis Anos 80</label>
           </div>
           <div>
-            <input type="checkbox" name="Anos70" id="Vinil70" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="Anos70"
+              id="vinil70"
+            />
             <label for="Vinil70"> Vinis Anos 70</label>
           </div>
           <div>
-            <input type="checkbox" name="Anos60" id="Vinil60" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="Anos60"
+              id="vinil60"
+            />
             <label for="Vinil60"> Vinis Anos 60</label>
           </div>
           <div>
-            <input type="checkbox" name="Anos90" id="Vinil90" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="Anos90"
+              id="vinil90"
+            />
             <label for="Vinil90"> Vinis Anos 90</label>
           </div>
           <div>
-            <input type="checkbox" name="AnosRaros" id="VinilRaros" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="AnosRaros"
+              id="vinilRaros"
+            />
             <label for="VinilRaros"> Vinis Raros</label>
           </div>
           <div>
-            <input type="checkbox" name="Baratos" id="VinilBaratos" />
+            <input
+              type="checkbox"
+              onchange="filterDiscos()"
+              name="Baratos"
+              id="vinilBaratos"
+            />
             <label for="VinilBaratos"> Vinis acessiveis </label>
           </div>
         </div>
@@ -138,11 +168,11 @@
       <div class="box container mt-4">
         <div class="row">
           <!-- Card 1 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil80">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Disco 1</h5>
+                <h5 class="card-title">Disco 80</h5>
                 <p class="card-text">
                   Vendo disco de vinil em ótimo estado de conservação, capa bem
                   preservada e som limpo, com aquele chiado característico que
@@ -157,11 +187,11 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil90">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Disco 2</h5>
+                <h5 class="card-title">Disco 90</h5>
                 <p class="card-text">
                   Vendo disco de vinil em ótimo estado de conservação, capa bem
                   preservada e som limpo, com aquele chiado característico que
@@ -176,11 +206,11 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil70">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Disco 3</h5>
+                <h5 class="card-title">Disco 70</h5>
                 <p class="card-text">
                   Vendo disco de vinil em ótimo estado de conservação, capa bem
                   preservada e som limpo, com aquele chiado característico que
@@ -195,11 +225,11 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil60">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Disco 4</h5>
+                <h5 class="card-title">Disco 60</h5>
                 <p class="card-text">
                   Vendo disco de vinil em ótimo estado de conservação, capa bem
                   preservada e som limpo, com aquele chiado característico que
@@ -214,7 +244,7 @@
             </div>
           </div>
           <!-- Card 5 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinilRaros">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -233,7 +263,7 @@
             </div>
           </div>
           <!-- Card 6 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinilBaratos">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -252,7 +282,7 @@
             </div>
           </div>
           <!-- Card 7 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil80">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -271,11 +301,11 @@
             </div>
           </div>
           <!-- Card 8 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 vinil70">
             <div class="card">
               <img src="assets/vinil.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Disco 8</h5>
+                <h5 class="card-title">Disco 70</h5>
                 <p class="card-text">
                   Vendo disco de vinil em ótimo estado de conservação, capa bem
                   preservada e som limpo, com aquele chiado característico que
