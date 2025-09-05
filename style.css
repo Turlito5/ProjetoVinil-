@@ -395,8 +395,7 @@ body.darkmode-btn,
   max-width: 1400px;
   min-height: 600px;
   padding: 30px;
-
-  margin: auto;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 991.98px) {
